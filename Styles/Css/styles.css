@@ -49,7 +49,8 @@
 
 html {
   font-size: 62.5%;
-  font-family: "Lexend Deca", sans-serif; }
+  font-family: "Lexend Deca", sans-serif;
+  background-color: #f2f2f2; }
   @media (max-width: 1023px) {
     html {
       font-size: 50%; } }

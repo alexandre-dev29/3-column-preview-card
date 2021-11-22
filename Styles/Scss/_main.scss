@@ -11,6 +11,7 @@ html {
   font-size: 62.5% /*For taking the 1rem value to 10px*/;
   //font-family: 'Big Shoulders Display', cursive;
   font-family: "Lexend Deca", sans-serif;
+  background-color: $light_gray;
   @include responsive(desktop, large) {
     font-size: 50%;
   }
