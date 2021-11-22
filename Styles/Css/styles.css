@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 60vh;
+  padding: 4rem; }
+  @media (min-width: 768px) {
+    .card {
+      height: 70vh;
+      padding: 4rem; } }
+  .card__image {
+    width: 8rem;
+    height: 5rem; }
+  .card__title {
+    color: #f2f2f2;
+    font-family: "Big Shoulders Display", cursive;
+    font-size: 4rem;
+    font-weight: 900; }
+  .card__description {
+    color: rgba(255, 255, 255, 0.55);
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    font-size: 2.1rem; }
+  .card__button {
+    text-decoration: none;
+    background-color: white;
+    align-self: start;
+    padding: 2rem 5rem;
+    border-radius: 3rem;
+    font-size: 1.4rem;
+    transition: all 0.5s; }
+    .card__button:hover {
+      color: white !important;
+      border: solid 0.2rem white;
+      background-color: transparent;
+      padding: 1.8rem 5rem; }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  font-family: "Lexend Deca", sans-serif; }
+  @media (max-width: 1023px) {
+    html {
+      font-size: 50%; } }
+
+.bright-orange {
+  background-color: #e38826; }
+
+.light-cyan {
+  background-color: #006970; }
+
+.dark-cyan {
+  background-color: #004241; }
+
+.text-orange {
+  color: #e38826; }
+
+.text-cyan {
+  color: #006970; }
+
+.text-cyan-dark {
+  color: #004241; }
+
+body {
+  box-sizing: border-box; }
+
+main {
+  height: 100vh;
+  width: 100vw; }
+
+.container {
+  padding: 10rem 8rem;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 400px)); }
+  @media (min-width: 640px) {
+    .container {
+      padding: 10rem 10rem; } }
+  @media (min-width: 768px) {
+    .container {
+      padding: 10rem 13rem; } }
+
+.attribution {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #e38826;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1.4rem;
+  width: 100%; }
+  .attribution a {
+    text-decoration: none;
+    color: #006970; }
+  @media (min-width: 640px) {
+    .attribution {
+      font-size: 2rem;
+      position: absolute;
+      top: 90%;
+      left: 50%;
+      transform: translate(-50%, -50%); } }

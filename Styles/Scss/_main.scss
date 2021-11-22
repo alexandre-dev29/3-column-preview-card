@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  font-size: 62.5% /*For taking the 1rem value to 10px*/;
+  //font-family: 'Big Shoulders Display', cursive;
+  font-family: "Lexend Deca", sans-serif;
+  @include responsive(desktop, large) {
+    font-size: 50%;
+  }
+}
+.bright-orange {
+  background-color: $bright_orange;
+}
+.light-cyan {
+  background-color: $dark_cyan;
+}
+.dark-cyan {
+  background-color: $very_dark_cyan;
+}
+
+.text-orange {
+  color: $bright_orange;
+}
+.text-cyan {
+  color: $dark_cyan;
+}
+.text-cyan-dark {
+  color: $very_dark_cyan;
+}
+
+body {
+  box-sizing: border-box;
+}
+main {
+  height: 100vh;
+  width: 100vw;
+}
+
+.container {
+  padding: 10rem 8rem;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
+  @include responsive(mobile, small) {
+    padding: 10rem 10rem;
+  }
+  @include responsive(mobile, medium) {
+    padding: 10rem 13rem;
+  }
+}
+
+.attribution {
+  @include centerElement(5%, 50%);
+  color: $bright_orange;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1.4rem;
+  width: 100%;
+
+  a {
+    text-decoration: none;
+    color: $dark_cyan;
+  }
+
+  @include responsive(mobile, small) {
+    font-size: 2rem;
+    @include centerElement(90%, 50%);
+  }
+}

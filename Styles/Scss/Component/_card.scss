@@ -1,0 +1,47 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 60vh;
+  padding: 4rem;
+  @include responsive(mobile, medium) {
+    height: 70vh;
+    padding: 4rem;
+  }
+
+  &__image {
+    width: 8rem;
+    height: 5rem;
+  }
+
+  &__title {
+    color: $light_gray;
+    font-family: "Big Shoulders Display", cursive;
+    font-size: 4rem;
+    font-weight: 900;
+  }
+
+  &__description {
+    color: $white_transparent_75;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    font-size: 2.1rem;
+  }
+
+  &__button {
+    text-decoration: none;
+    background-color: $white;
+    align-self: start;
+    padding: 2rem 5rem;
+    border-radius: 3rem;
+    font-size: 1.4rem;
+    transition: all 0.5s;
+
+    &:hover {
+      color: $white !important;
+      border: solid 0.2rem $white;
+      background-color: transparent;
+      padding: 1.8rem 5rem;
+    }
+  }
+}
