@@ -52,7 +52,8 @@ main {
     padding: 10rem 10rem;
   }
   @include responsive(mobile, medium) {
-    padding: 10rem 13rem;
+    padding: 10rem 17rem;
+    display: flex;
   }
 }
 

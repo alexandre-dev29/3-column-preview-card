@@ -89,7 +89,8 @@ main {
       padding: 10rem 10rem; } }
   @media (min-width: 768px) {
     .container {
-      padding: 10rem 13rem; } }
+      padding: 10rem 17rem;
+      display: flex; } }
 
 .attribution {
   position: absolute;
