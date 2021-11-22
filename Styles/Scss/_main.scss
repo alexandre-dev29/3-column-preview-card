@@ -47,7 +47,7 @@ main {
   padding: 10rem 8rem;
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 400px));
   @include responsive(mobile, small) {
     padding: 10rem 10rem;
   }
@@ -71,5 +71,25 @@ main {
   @include responsive(mobile, small) {
     font-size: 2rem;
     @include centerElement(90%, 50%);
+  }
+}
+
+.has-border-left {
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  @include responsive(mobile, medium) {
+    border-bottom-left-radius: 1rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 0;
+  }
+}
+
+.has-border-right {
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  @include responsive(mobile, medium) {
+    border-bottom-right-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: 0;
   }
 }
